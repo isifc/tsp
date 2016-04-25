@@ -10,3 +10,17 @@ public class Main{
 		System.out.println(f.format("%f",d));
 	}
 }
+// version pandorga 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+public class Main{
+	public static void main(String [] args){
+		
+		Double d = 19/3 ;
+		NumberFormat formatter = new DecimalFormat("#.##");  
+		String str =formatter.format(d);
+
+		System.out.println(str);
+	}
+}
+
